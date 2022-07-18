@@ -1,20 +1,18 @@
 * {
     box-sizing: border-box;
 }
-
 .container {
     max-width: 930px;
     margin: 0 auto;
     padding: 0 15px;
 }
-
 .header {
     background-color: #23232e;  
 }
 .header .logo {
     width: unset;
     height: 84px;
-    margin-bottom: 93px; /*186px*/
+    margin-bottom: 93px; /*186px-desktop*/
 }
 .header .container {
     min-height: 100vh;
@@ -50,7 +48,7 @@
     height: 48px;
 }
 main {
-    background-image: url('../img/bg.png');
+    background-image: url('../img/backround.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,6 +102,51 @@ main .container {
 }
 @media only screen and (min-width: 930px) {
     .header .container {
-        padding: 48px 15px 80px; 
+        padding: 80px 50px 280px; 
+    }
+    .header .logo {
+        height: 168px;
+        margin-bottom: 186px;
+    }
+    .header span {
+        font-size: 60px;
+        margin-bottom: 70px;
+    }
+    .header p {
+        font-size: 35px;
+    }
+    .header .icon-arrow {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+    }
+    .header .icon-arrow {
+        bottom: 50px;
+    }
+    main .container {
+        padding: 125px 30px 120px;
+    }
+    .about {
+        margin-bottom: 120px;
+    }
+    .about p:not(:last-child) {
+        margin-bottom: 54px;
+    }
+    .services h2 {
+        margin-bottom: 100px;
+    }
+    .services ul {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .services ul li:not(:last-child) {
+        margin-right: 36px;
+    }
+    .services ul li h3 {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+    .services ul li p {
+        font-size: 20px;
     }
 }
