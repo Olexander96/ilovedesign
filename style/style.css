@@ -47,6 +47,7 @@
     width: 48px;
     height: 48px;
 }
+
 main {
     background-image: url('../img/backround.png');
     background-position: center;
@@ -54,9 +55,13 @@ main {
     background-size: cover;
 }
 main .container {
+    max-width: 970px;
     padding: 62px 15px 60px;
 }
 .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 60px;
 }
 .about p {
@@ -68,9 +73,10 @@ main .container {
 .about p:not(:last-child) {
     margin-bottom: 26px;
 }
+
 .services h2 {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     color: #464b4f;
     font-weight: 700;
     text-transform: uppercase;
@@ -129,15 +135,25 @@ main .container {
     .about {
         margin-bottom: 120px;
     }
+    .about p {
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 1.2em;
+    }
+
     .about p:not(:last-child) {
         margin-bottom: 54px;
     }
     .services h2 {
+        font-size: 60px;
         margin-bottom: 100px;
     }
     .services ul {
         flex-direction: row;
         align-items: flex-start;
+    }
+    .services ul li {
+        max-width: 300px;
     }
     .services ul li:not(:last-child) {
         margin-right: 36px;
